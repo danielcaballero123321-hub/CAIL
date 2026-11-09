@@ -6,6 +6,8 @@ danielcaballero123321@gmail.com
 
 Code for the paper *Mitigating Shortcut Learning through Change-Aware Losses for ARC-AGI*.
 
+Paper: [PDF](https://github.com/danielcaballero123321-hub/cail/releases/download/v1.0/Mitigating.Shortcut.Learning.through.Change-Aware.Losses.for.ARC-AGI.pdf)
+
 CAIL is a 23M-parameter network that infers an ARC-AGI-2 task from its demonstrations in a single forward pass, without test-time training or a language model. It is trained with a change-aware loss that corrects the shortcuts a uniform cross-entropy encourages.
 
 ## Setup
