@@ -55,6 +55,22 @@ python vote.py --run-dir runs/final_model --data-dir data --n-colors 125
 
 This evaluates a trained run under 1,000 views (8 symmetries and 125 color permutations, with a fixed seed), and writes `vote_summary.json` and `vote_items.jsonl` to the run directory.
 
+## Pretrained weights
+
+The weights of the two models in the paper are in the [v1.0 release](https://github.com/danielcaballero123321-hub/cail/releases/tag/v1.0), as checkpoints that `vote.py` reads directly:
+
+| File | Model |
+|---|---|
+| `final_model.pt` | The reported model, at its last epoch |
+| `kaggle_submission.pt` | The model submitted to Kaggle, at its last epoch |
+
+```bash
+mkdir -p runs/final_model
+curl -L -o runs/final_model/last.pt https://github.com/danielcaballero123321-hub/cail/releases/download/v1.0/final_model.pt
+python vote.py --run-dir runs/final_model --data-dir data --n-colors 125
+```
+
+
 ## Reproducing the public-evaluation score
 
 Training on a GPU is not bitwise reproducible, so a new run of `final_model` may not reproduce the 1.25% (1.5 of 120 tasks) at its last epoch. In the run reported in the paper, the vote over 1,000 views solved two test inputs:
