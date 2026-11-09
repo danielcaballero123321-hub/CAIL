@@ -90,6 +90,8 @@ Training on a GPU is not bitwise reproducible, even with the same seed, and some
 
 This work is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
+---
+
 The author was 17 years old when this work was done.
 
 A personal note from the author: [A_NOTE.md](A_NOTE.md).
