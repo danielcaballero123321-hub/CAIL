@@ -1,0 +1,218 @@
+{
+  "attn_gate": "",
+  "attn_gate_adamw": false,
+  "attn_res": false,
+  "attn_res_projected_query": false,
+  "attn_res_query_from": "sum",
+  "b4_cross_k": false,
+  "b4_pixelattn": true,
+  "b4_pixelattn_every": 1,
+  "b4_rounds": 1,
+  "b4_self": false,
+  "batch_size": 64,
+  "block_norm": "group",
+  "block_type": "v41",
+  "bridge": "demos",
+  "cnn_demo_attn": false,
+  "cnn_demo_pw_dw": 0,
+  "cnn_demo_sees_pair": true,
+  "cnn_demo_sees_test": false,
+  "cnn_demo_shared": true,
+  "cnn_demo_stem": false,
+  "cnn_demo_stem_depth": 2,
+  "cnn_grid_block_type": "",
+  "cnn_grid_depths": [
+    1,
+    1,
+    1
+  ],
+  "cnn_grid_downsamples": [
+    1,
+    2
+  ],
+  "cnn_grid_stages": [
+    128,
+    256,
+    256
+  ],
+  "cnn_in_block_type": "convnext_v1",
+  "cnn_in_depths": [
+    2,
+    1,
+    1
+  ],
+  "cnn_in_downsamples": [
+    1,
+    2
+  ],
+  "cnn_in_stages": [
+    256,
+    256,
+    256
+  ],
+  "cnn_out_block_type": "",
+  "cnn_out_depths": [
+    1,
+    1,
+    1
+  ],
+  "cnn_out_downsamples": [
+    1,
+    2
+  ],
+  "cnn_out_stages": [
+    128,
+    256,
+    256
+  ],
+  "cnn_test_block_type": "",
+  "cnn_test_depths": [
+    2,
+    2
+  ],
+  "cnn_test_downsamples": [],
+  "cnn_test_stages": [
+    256,
+    256
+  ],
+  "cnn_test_v41_expansion": 1,
+  "color_balanced_loss": true,
+  "compile_model": true,
+  "cond_test": "cross",
+  "convnext_expansion": 2,
+  "d_model": 256,
+  "decay_1d": false,
+  "decoder": "two_way",
+  "downsample_norm": "groupnorm",
+  "dropout": 0.0,
+  "empty_weight": 1.0,
+  "epochs": 100,
+  "eval_every": 1,
+  "eval_seed": 4321,
+  "ffn_mult": 2,
+  "ffn_px_dw": 0,
+  "free_frame": false,
+  "grad_clip": 1.0,
+  "grid_cross_before": -1,
+  "head_dim": 64,
+  "k_order": [],
+  "layer_scale_init_cnn": 1e-06,
+  "layerscale_init": 0.1,
+  "loss_alpha": 0.5,
+  "loss_beta_end": 1.0,
+  "loss_beta_start": 0.0,
+  "loss_class_weights": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "loss_zone_weights": [
+    1.0,
+    0.125
+  ],
+  "loss_zone_weights_gen": [
+    1.0,
+    1.0
+  ],
+  "lr": 0.001,
+  "lr_min": 1e-06,
+  "lr_shape": "cosine",
+  "max_pairs": 6,
+  "min_pairs": 3,
+  "min_pairs_train": 3,
+  "n_blocks_a2": 4,
+  "n_blocks_a3": 0,
+  "n_blocks_b2": 2,
+  "n_blocks_b3": 0,
+  "n_blocks_b4": 4,
+  "n_bottleneck_tokens": 0,
+  "n_heads": 4,
+  "num_workers": 2,
+  "nvarc_families_heldout": 5,
+  "nvarc_families_seed": 5678,
+  "nvarc_full_eval_n": 350,
+  "nvarc_full_seed": 2468,
+  "nvarc_heldout_n": 250,
+  "nvarc_split_seed": 1234,
+  "nvarc_tasks_per_family": 50,
+  "optimizer_name": "muon",
+  "pin_memory": true,
+  "pixel_self_every": 0,
+  "progress_line": true,
+  "rope_a3_k": false,
+  "rope_a_js": [
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      5
+    ],
+    [
+      0,
+      2,
+      5
+    ]
+  ],
+  "rope_b3": true,
+  "rope_b4_js": [
+    [
+      0,
+      2,
+      5,
+      7
+    ],
+    [
+      0,
+      2,
+      5,
+      7
+    ],
+    [
+      0,
+      2,
+      5,
+      7
+    ],
+    [
+      0,
+      2,
+      5,
+      7
+    ]
+  ],
+  "rope_b4_q": true,
+  "rope_base": 10.0,
+  "rope_diag": true,
+  "rope_k_a3_q": false,
+  "rope_k_b4_k": false,
+  "rope_k_self": false,
+  "rope_px_self": "b",
+  "run_name": "change_aware_alpha_0.5",
+  "save_ckpt": true,
+  "sched_epochs": 100,
+  "sched_every": 100,
+  "seed": 0,
+  "use_amp": true,
+  "use_color_perm": true,
+  "use_flips": true,
+  "use_nvarc": true,
+  "use_rotations": true,
+  "verify_pipeline": true,
+  "warmup_epochs": 0.25,
+  "weight_decay": 0.15
+}
