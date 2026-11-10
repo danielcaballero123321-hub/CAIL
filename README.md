@@ -102,7 +102,7 @@ Every result in the paper comes from one of the files in `configs/`, except the 
 
 The configurations named `design_diagonal_rope`, `design_no_1d_weight_decay` and `design_1d_weight_decay` belong to earlier versions of the model, evaluated without NVARC full in the paper. `failed_bottleneck_*` and `failed_no_bottleneck` use the same earlier architecture.
 
-Training on a GPU is not bitwise reproducible, even with the same seed, and some configurations vary widely between runs.
+Training on a GPU is not bitwise reproducible, even with the same seed, and some older configurations vary widely between runs.
 
 ## License
 
